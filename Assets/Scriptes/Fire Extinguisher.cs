@@ -20,8 +20,8 @@ public class FireExtinguisher : MonoBehaviour
         }
 
         // Subscribe to the grab and ungrab events
-        xrGrabInteractable.onSelectEnter.AddListener(OnGrab);
-        xrGrabInteractable.onSelectExit.AddListener(OnRelease);
+        xrGrabInteractable.onSelectEntered.AddListener(OnGrab);
+        xrGrabInteractable.onSelectExited.AddListener(OnRelease);
     }
 
     private void Update()
